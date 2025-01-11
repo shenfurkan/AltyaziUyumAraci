@@ -1,6 +1,4 @@
 # **Altyazı Uyum Aracı**
-
-### **Proje Açıklaması**
 **Altyazı Uyum Aracı**, altyazı dosyalarındaki Türkçe karakter sorunlarını çözmek için geliştirilmiş bir masaüstü uygulamasıdır. Araç, SRT formatındaki altyazı dosyalarını **ISO-8859-9** karakter kodlamasından **UTF-8** formatına dönüştürerek Türkçe karakterlerin düzgün görüntülenmesini sağlar.
 
 ---
