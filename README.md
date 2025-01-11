@@ -1,62 +1,71 @@
-Aşağıda, GitHub'da proje açıklamanız (README) için uygun bir format sunuyorum. Açıklama, projenizin özelliklerini ve kullanımını net bir şekilde ifade eder.
-
----
-
 # **Altyazı Uyum Aracı**
 
-Bu proje, altyazı dosyalarını (SRT formatında) ISO-8859-9 karakter kodlamasından UTF-8 formatına dönüştüren bir masaüstü uygulamasıdır. Türkçe karakter problemleri yaşayan altyazı dosyalarını düzeltmek için basit bir çözüm sunar.
+### **Proje Açıklaması**
+**Altyazı Uyum Aracı**, Türkçe altyazı dosyalarında yaşanan karakter kodlama sorunlarını düzeltmek için geliştirilmiş bir araçtır. Bu araç, altyazı dosyalarını (SRT formatında) **ISO-8859-9** karakter kodlamasından **UTF-8** formatına dönüştürerek Türkçe karakterlerin düzgün görüntülenmesini sağlar.
 
 ---
 
 ## **Özellikler**
-- **Kullanıcı Dostu Arayüz**: Modern ve sade bir grafik arayüz sunar.
-- **Karakter Kodlama Düzeltmesi**: ISO-8859-9 (Latin5) ile UTF-8 formatı arasında hızlı ve doğru dönüşüm sağlar.
-- **Dosya İşleme**: Giriş dosyasını seçtikten sonra dönüştürülen dosyayı aynı klasöre kaydeder.
-- **CMD'siz Çalıştırma**: Kullanıcı deneyimini artırmak için arka planda terminal penceresi açılmaz.
+- **Kullanıcı Dostu Arayüz**: Sade ve şık bir arayüzle kullanıcıların kolayca işlem yapmasına olanak tanır.
+- **Hızlı Dönüşüm**: SRT dosyalarını UTF-8 formatına dönüştürerek Türkçe karakter sorunlarını çözer.
+- **CMD Penceresi Yok**: EXE olarak çalıştırıldığında arka planda terminal açılmaz.
+- **Taşınabilirlik**: Python dosyası veya EXE formatıyla kolayca kullanılabilir.
 
 ---
 
-## **Gereksinimler**
-- Python 3.7 veya üstü
-- Gerekli kütüphaneler:
-  - `tkinter` (Python ile birlikte gelir)
-  - `codecs`
-
-Opsiyonel:
-- PyInstaller (EXE dosyası oluşturmak için)
+## **Dosyalar**
+- **altyazi.py**: Python kaynak kodu.
+- **Altyazı_Uyum_Aracı.exe**: Masaüstü uygulaması olarak çalıştırılabilir dosya.
+- **README.md**: Proje hakkında bilgi.
 
 ---
 
 ## **Kurulum**
-1. Bu projeyi klonlayın:
+### Python ile Çalıştırma
+1. **Gerekli Bağımlılıkları Yükleyin**:
    ```bash
-   git clone https://github.com/kullaniciadi/altyazi-uyum-araci.git
+   pip install tk
    ```
-2. Ana dizine gidin:
+2. **altyazi.py** dosyasını indirin.
+3. Terminal veya Komut İstemcisinde şu komutu çalıştırarak programı başlatın:
    ```bash
-   cd altyazi-uyum-araci
+   python altyazi.py
    ```
-3. Gerekli bağımlılıkları yükleyin (opsiyonel):
-   ```bash
-   pip install pyinstaller
-   ```
+
+### EXE Olarak Çalıştırma
+1. **Altyazı_Uyum_Aracı.exe** dosyasını indirin.
+2. Dosyayı çift tıklayarak çalıştırın.
 
 ---
 
 ## **Kullanım**
-### Python Dosyasını Çalıştırma
-1. Terminal veya Komut İstemcisinden aşağıdaki komutu çalıştırarak programı başlatabilirsiniz:
-   ```bash
-   python altyazı.py
-   ```
-2. Uygulama açıldığında:
-   - "Dosya Seç" butonuyla dönüştürmek istediğiniz SRT dosyasını seçin.
+1. **Girdi Dosyasını Seçin**:
+   - "Dosya Seç" butonuna tıklayarak dönüştürmek istediğiniz SRT dosyasını seçin.
+2. **Dönüştürme**:
    - "Dönüştür" butonuna tıklayın.
-   - Dönüştürülen dosya, aynı klasöre `*_utf8.srt` uzantısıyla kaydedilecektir.
+   - Dönüştürülen dosya, seçtiğiniz dosyayla aynı klasöre `*_utf8.srt` adıyla kaydedilecektir.
 
-### EXE Olarak Çalıştırma
-1. PyInstaller kullanarak EXE dosyasını oluşturun:
+---
+
+## **Geliştirme**
+Projeyi geliştirmek veya katkıda bulunmak için aşağıdaki adımları izleyebilirsiniz:
+
+1. Bu projeyi **fork** edin.
+2. Yeni bir dal oluşturun:
    ```bash
-   pyinstaller --noconsole --onefile --icon="favicon.ico" altyazı.py
+   git checkout -b yeni-ozellik
    ```
-2. EXE dosyanız `dist` klasöründe oluşacaktır. Çift tıklayarak çalıştırabilirsiniz.
+3. Değişikliklerinizi işleyin:
+   ```bash
+   git commit -m "Yeni özellik eklendi"
+   ```
+4. Değişiklikleri gönderin:
+   ```bash
+   git push origin yeni-ozellik
+   ```
+5. Bir **Pull Request** gönderin.
+
+---
+
+## **Lisans**
+Bu proje **MIT Lisansı** ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına göz atabilirsiniz.
