@@ -1,45 +1,21 @@
 # **Altyazı Uyum Aracı**
 
 ### **Proje Açıklaması**
-**Altyazı Uyum Aracı**, Türkçe altyazı dosyalarında yaşanan karakter kodlama sorunlarını düzeltmek için geliştirilmiş bir araçtır. Bu araç, altyazı dosyalarını (SRT formatında) **ISO-8859-9** karakter kodlamasından **UTF-8** formatına dönüştürerek Türkçe karakterlerin düzgün görüntülenmesini sağlar.
+**Altyazı Uyum Aracı**, altyazı dosyalarındaki Türkçe karakter sorunlarını çözmek için geliştirilmiş bir masaüstü uygulamasıdır. Araç, SRT formatındaki altyazı dosyalarını **ISO-8859-9** karakter kodlamasından **UTF-8** formatına dönüştürerek Türkçe karakterlerin düzgün görüntülenmesini sağlar.
 
 ---
 
-## **Özellikler**
-- **Kullanıcı Dostu Arayüz**: Sade ve şık bir arayüzle kullanıcıların kolayca işlem yapmasına olanak tanır.
-- **Hızlı Dönüşüm**: SRT dosyalarını UTF-8 formatına dönüştürerek Türkçe karakter sorunlarını çözer.
-- **CMD Penceresi Yok**: EXE olarak çalıştırıldığında arka planda terminal açılmaz.
-- **Taşınabilirlik**: Python dosyası veya EXE formatıyla kolayca kullanılabilir.
+## **Hızlı Başlangıç**
+### **1. EXE Dosyasını İndirin**
+1. [**Altyazı_Uyum_Aracı.exe**](https://github.com/shenfurkan/AltyaziUyumAraci/raw/main/Altyazı_Uyum_Aracı.exe) dosyasını indirin.
+2. Dosyayı indirdikten sonra çift tıklayarak çalıştırın.
+
+> **Not**: Windows tarafından bilinmeyen bir kaynaktan indirilen dosyalar için güvenlik uyarısı alabilirsiniz. Bu durumda, "Güvenliği aş" seçeneğini kullanarak çalıştırabilirsiniz.
 
 ---
 
-## **Dosyalar**
-- **altyazi.py**: Python kaynak kodu.
-- **Altyazı_Uyum_Aracı.exe**: Masaüstü uygulaması olarak çalıştırılabilir dosya.
-- **README.md**: Proje hakkında bilgi.
-
----
-
-## **Kurulum**
-### Python ile Çalıştırma
-1. **Gerekli Bağımlılıkları Yükleyin**:
-   ```bash
-   pip install tk
-   ```
-2. **altyazi.py** dosyasını indirin.
-3. Terminal veya Komut İstemcisinde şu komutu çalıştırarak programı başlatın:
-   ```bash
-   python altyazi.py
-   ```
-
-### EXE Olarak Çalıştırma
-1. **Altyazı_Uyum_Aracı.exe** dosyasını indirin.
-2. Dosyayı çift tıklayarak çalıştırın.
-
----
-
-## **Kullanım**
-1. **Girdi Dosyasını Seçin**:
+### **2. Kullanım**
+1. **Dosya Seçimi**:
    - "Dosya Seç" butonuna tıklayarak dönüştürmek istediğiniz SRT dosyasını seçin.
 2. **Dönüştürme**:
    - "Dönüştür" butonuna tıklayın.
@@ -47,8 +23,30 @@
 
 ---
 
-## **Geliştirme**
-Projeyi geliştirmek veya katkıda bulunmak için aşağıdaki adımları izleyebilirsiniz:
+## **Python ile Çalıştırma (Opsiyonel)**
+Eğer kaynak koddan çalıştırmak isterseniz:
+
+1. **Gerekli Bağımlılıkları Yükleyin**:
+   ```bash
+   pip install tk
+   ```
+2. **altyazi.py** dosyasını indirin.
+3. Aşağıdaki komutu çalıştırarak uygulamayı başlatın:
+   ```bash
+   python altyazi.py
+   ```
+
+---
+
+## **Özellikler**
+- **Kolay Kullanım**: Kullanıcı dostu, modern bir grafik arayüz sunar.
+- **Hızlı Dönüşüm**: ISO-8859-9 kodlamasından UTF-8 formatına dönüşümü saniyeler içinde tamamlar.
+- **Taşınabilirlik**: EXE dosyası olarak kullanılabilir, Python kurulumuna gerek yoktur.
+
+---
+
+## **Katkıda Bulunma**
+Projeye katkıda bulunmak için şu adımları izleyebilirsiniz:
 
 1. Bu projeyi **fork** edin.
 2. Yeni bir dal oluşturun:
@@ -63,9 +61,4 @@ Projeyi geliştirmek veya katkıda bulunmak için aşağıdaki adımları izleye
    ```bash
    git push origin yeni-ozellik
    ```
-5. Bir **Pull Request** gönderin.
-
----
-
-## **Lisans**
-Bu proje **MIT Lisansı** ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına göz atabilirsiniz.
+5. Bir **Pull Request** gönderin
